@@ -89,7 +89,7 @@ const Cart = () => {
             <hr className="mb-4" />
             <div className="flex justify-between mb-6">
               <p className="text-xl font-bold">Total</p>
-              <p className="text-xl font-bold">$198.00</p>
+              <p className="text-xl font-bold  text-red-500">$198.00</p>
             </div>
             <button className="w-[334.67px] h-[60px] rounded-[30px] text-white bg-[#029FAE]">
               Member Checkout

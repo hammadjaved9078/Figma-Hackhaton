@@ -18,16 +18,16 @@ const Navbar = () => {
           <Link href="/" className="text-[#007580] text-[14px] font-medium">
             Home
           </Link>
-          <Link href={"#"} className="text-[14px] font-medium">
+          <Link href={"#"} className="text-[14px] font-medium hover:text-[#007580] ">
             Shop
           </Link>
-          <Link href="/product" className="text-[14px] font-medium">
+          <Link href="/product" className="text-[14px] font-medium hover:text-[#007580]">
             Product
           </Link>
-          <Link href={`/product/`} className="text-[14px] font-medium">
+          <Link href={`/product/1`} className="text-[14px] font-medium hover:text-[#007580]">
             Pages
           </Link>
-          <Link href="/about" className="text-[14px] font-medium">
+          <Link href="/about" className="text-[14px] font-medium hover:text-[#007580]">
             About
           </Link>
         </div>
@@ -35,7 +35,7 @@ const Navbar = () => {
         {/* Contact Information (Visible above 768px) */}
         <div className="hidden md:flex items-center gap-4 ml-auto mr-4">
           <span className="font-normal text-[#636270] text-[14px]">
-            <a href="/contact">Contact:</a>
+            <Link href="/contact">Contact:</Link>
           </span>
           <span className="font-medium text-[#272343] text-[14px] ml-1">
             (808) 555-0111
@@ -69,19 +69,19 @@ const Navbar = () => {
       {/* Mobile Menu Items (Visible below 768px) */}
       {isMenuOpen && (
         <div className="lg:hidden flex flex-col gap-4 mt-4 px-4">
-          <Link href="/" className="text-[#007580] text-[14px] font-medium">
+          <Link href="/" className="text-[#007580] text-[14px] text-center font-medium">
             Home
           </Link>
-          <Link href={""} className="text-[14px] font-medium">
+          <Link href={"#"} className="text-[14px] font-medium  text-center hover:text-[#007580] ">
             Shop
           </Link>
-          <Link href="/product" className="text-[14px] font-medium">
+          <Link href="/product" className="text-[14px] font-medium  text-center hover:text-[#007580]">
             Product
           </Link>
-          <Link href={"#"} className="text-[14px] font-medium">
+          <Link href="/product/2" className="text-[14px] font-medium  text-center hover:text-[#007580]">
             Pages
           </Link>
-          <Link href="/about" className="text-[14px] font-medium">
+          <Link href="/about" className="text-[14px] font-medium  text-center hover:text-[#007580]">
             About
           </Link>
         </div>

@@ -51,12 +51,14 @@ const ProductCard = ({ product }: { product: Product }) => (
           )}
         </div>
       </div>
-      <button
-        className="rounded-full bg-[#00B5A5] p-2 text-white transition-colors hover:bg-[#00A294]"
-        aria-label={`Add ${product.title} to cart`}
-      >
-        <ShoppingCart className="h-5 w-5" />
-      </button>
+      <Link href={"/cart"}>
+        <button
+          className="flex items-center justify-center h-[44px] w-[44px] rounded-[8px] bg-[#F0F2F3] p-2 text-[#272343] transition-colors hover:bg-[#029FAE] hover:text-white"
+          aria-label={`Add ${product.title} to cart`}
+        >
+          <ShoppingCart className="h-5 w-5 " />
+        </button>
+      </Link>
     </div>
   </div>
 );

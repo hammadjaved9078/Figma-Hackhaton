@@ -8,24 +8,29 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import { FaPaypal, FaCcVisa, FaCcMastercard, FaCcAmex } from "react-icons/fa";
+import Link from "next/link";
 
 export default function Footer() {
   return (
     <footer className="bg-white border-t border-gray-200 px-4  sm:px-12 md:px-28">
-      <div className="mx-auto py-12 ">
+      <div className=" max-w-screen-xl flex flex-col mx-auto py-12 ">
         <div className="flex flex-wrap justify-between gap-8  ">
           {/* Brand Section */}
           <div className="flex flex-col w-full  md:w-[320px] items-start ">
             <div className="flex items-center gap-2">
+              <Link href={"/"}>
               <Image
                 src="/Logo-Icon.png"
                 alt="logo"
                 width={40}
                 height={40}
               />
+              </Link>
+              <Link href={"/"}>
               <span className="text-[#272343] text-[26px] font-bold">
                 Comforty
               </span>
+              </Link>
             </div>
             <p className="mt-7 text-gray-500">
               Vivamus tristique odio sit amet velit semper, eu posuere turpis

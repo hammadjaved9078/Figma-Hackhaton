@@ -6,7 +6,7 @@ import AboutPopularProduct from '../Components/aboutPopularProduct';
 const page = () => {
     return (
       <div>
-        <AboutHero />
+            <AboutHero />
             <AboutSection />
             <AboutPopularProduct />
             

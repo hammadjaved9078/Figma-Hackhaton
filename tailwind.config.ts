@@ -9,6 +9,10 @@ const config: Config = {
   ],
   theme: {
   	extend: {
+		fontFamily: {
+			inter: ['Inter', 'sans-serif'], // Inter ko define karna
+			roboto: ['Roboto', 'sans-serif'], //Roboto ko define karna
+		  },
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',

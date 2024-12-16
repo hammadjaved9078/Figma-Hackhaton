@@ -40,13 +40,13 @@ export default function Categories() {
                 <Image
                   src={category.image}
                   alt={category.name}
-                  className="object-cover transition-transform duration-300 group-hover:scale-105 "
+                  className="object-cover w-full transition-transform duration-300 group-hover:scale-105 "
                   priority
                   width={400}
                   height={400}
                 />
               </div>
-              <div className="flex flex-col items-start p-5 gap-2 absolute left-0 right-0 top-[75.95%] bottom-0 bg-black/70 rounded-b-[10px]">
+              <div className="flex flex-col items-start p-5 gap-2 absolute left-0 right-0 top-[75.95%] bottom-0 bg-black/70 rounded-b-[10px] object-cover transition-transform duration-300 group-hover:scale-105">
                 <div className="absolute bottom-0 p-6">
                   <h3 className="mb-2 font-inter text-xl font-medium text-white">
                     {category.name}

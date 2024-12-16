@@ -10,6 +10,7 @@ const page = () => {
           
           <AllProduct />
           <Instagram />
+          
       
     </div>
   )
